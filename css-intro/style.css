@@ -8,7 +8,7 @@ body {
 
   /* imagen de fondo */
   background-image: url("./lego.jpg");
-  background-position: center;
+  /* background-position: center; */
   background-size: cover;
 }
 
@@ -71,5 +71,67 @@ li {
   margin: 30px 15px 30px 20px
 }
 
+li {
+  padding-right: 40px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav button {
+  width: 20%;
+  background-color: lightyellow;
+  height: 40px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* PSEUDOCLASES : */
+
+nav button:hover {
+  background-color: orange;
+}
+
+nav button:active {
+  background-color: black;
+  color: white;
+}
 
 
+/* PSEUDOELEMENTS :: */
+
+li::marker {
+  color: orange;
+  content: "🍕+🍍";
+}
+
+li::first-letter {
+  font-size: 50px;
+  color: purple;
+}
+
+/* ::before y ::after */
+
+/* li::before {
+  content: "HOLA";
+  color: red;
+}
+
+li::after {
+  content: "ADIOS";
+  color: red;
+} */
+
+section li:first-child:hover::after {
+  content: "Este es mi favorito!";
+  background-color: white;
+  margin-left: 20px;
+  padding: 5px;
+  color: darkgray;
+  position: absolute;
+}
