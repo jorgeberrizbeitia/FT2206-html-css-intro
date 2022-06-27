@@ -1,0 +1,75 @@
+/* Esto es un comentario de CSS  */
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+body {
+  background-color: burlywood;
+  font-size: 30px;
+  text-align: center;
+
+  /* imagen de fondo */
+  background-image: url("./lego.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* h2 {
+  color: lightseagreen;
+}
+
+section {
+  background-color: lightcoral;
+} */
+
+#toys {
+  background-color: aquamarine;
+}
+
+#games {
+  background-color: lightcoral;
+}
+
+#movies {
+  background-color: lightgoldenrodyellow;
+}
+
+.section-title {
+  color: brown;
+  /* text-align: center; */
+  text-decoration: underline;
+  font-family: "Titan One";
+  text-shadow: 2px 2px 1px green;
+}
+
+li {
+  list-style-position: inside;
+}
+
+/* dentro de toys, busca todos los elementos li */
+#toys li {
+  color: blue
+}
+
+#games li {
+  color: darkred
+}
+
+#movies li {
+  color: darkgoldenrod
+}
+
+#toys, #games, #movies {
+  /* border-style: solid;
+  border-width: 3px;  
+  border-color: darkred; */
+
+  border: solid 3px darkred;
+
+  /* margin-top: 30px;
+  margin-bottom: 30px; */
+
+  /* margin: top right bottom left */
+  margin: 30px 15px 30px 20px
+}
+
+
+
